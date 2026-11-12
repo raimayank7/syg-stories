@@ -1,0 +1,16 @@
+
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal}.grid li{min-width:0}
+[lang=hi]{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font)}
+.scards{list-style:none;padding:0;margin:14px 0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.scard a{display:block;height:100%;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;text-decoration:none;color:var(--ink)}
+.scard a:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.scard b{display:block;font-family:var(--font-head);font-size:1.1rem;margin-bottom:4px}.scard span{display:block;color:var(--soft);font-size:.94rem}
+.scard small{display:block;margin-top:8px;color:var(--accent);font-weight:600;font-size:.82rem}
+#story{font-size:1.1rem;line-height:1.9}#story p{margin:0 0 1em}#story p.now{background:var(--surface2);border-radius:8px;box-shadow:0 0 0 6px var(--surface2)}
+#story p.last{font-style:italic}
+.sbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0 18px}.sbar .meta{color:var(--soft);font-size:.92rem;margin-right:auto}
+.tip{background:var(--surface);border-left:4px solid var(--amber);border-radius:8px;padding:10px 14px;margin:12px 0;font-size:.95rem;color:var(--soft)}.tip b{color:var(--ink)}
+html.night{filter:brightness(.62)}html.night body{background:#000}
+.mk label{display:block;font-weight:600;font-size:.92rem;margin-bottom:4px}
+#made{font-size:1.1rem;line-height:1.9;background:var(--surface);border:2px solid var(--teal);border-radius:var(--r);padding:16px;margin:16px 0}
+@media print{.hd,.ft,.crumbs,.noprint,.sponsor-slot,.boot,.sbar,.acts,.tip{display:none!important}body{background:#fff}#story,#made{font-size:13pt;border:0}}
