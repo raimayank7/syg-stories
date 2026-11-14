@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-kahani-cdc110db81', SHELL = ["/kahani/assets/site.css?v=1f799d5064", "/kahani/assets/site.js?v=be6129bb4a", "/kahani/icons/logo-light.webp", "/kahani/icons/logo-dark.webp"];
+const CACHE = 'syg-m-kahani-5f0e96f5c0', SHELL = ["/kahani/assets/site.css?v=bdcd893b36", "/kahani/assets/site.js?v=be6129bb4a", "/kahani/icons/logo-light.webp", "/kahani/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-kahani-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
